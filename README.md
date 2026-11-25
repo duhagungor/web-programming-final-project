@@ -1,12 +1,11 @@
 # Pastel Mutfak • Resimli Pastel Tarif Defteri
-> **Çerçevesiz (Vanilla) HTML5, CSS3 ve Modern JavaScript ile Geliştirilmiş Duyarlı ve Etkileşimli Web Sitesi**
+> **HTML5, CSS3 ve Vanilla JavaScript kullanılarak geliştirilmiş, duyarlı ve etkileşimli dijital tarif defteri.**
 
 ---
 
 ## Canlı Yayın ve Depo Bağlantıları
-* **Canlı Site (Demo):** [https://kullaniciadi.github.io/pastel-mutfak](https://kullaniciadi.github.io/pastel-mutfak) *(GitHub Pages / Netlify / Vercel ile ücretsiz yayına alınabilir)*
-* **GitHub Kaynak Kodu Deposu:** [https://github.com/kullaniciadi/pastel-mutfak](https://github.com/kullaniciadi/pastel-mutfak)
-* **Kullanılan Harici Kütüphane / Framework:** **YOK (Sıfır Bootstrap, Sıfır Tailwind, Sıfır jQuery)**. Tamamen saf HTML5, CSS3 ve Vanilla ES6+ JavaScript.
+* **Canlı Site: https://duhagungor.github.io/web-programming-final-project/
+* **GitHub Deposu: https://github.com/duhagungor/web-programming-final-project
 
 ---
 
@@ -130,31 +129,7 @@ Pastel-Mutfak/
 
 ---
 
-## 6. Ücretsiz Yayına Alma Kılavuzu
-
-Proje tamamen statik (HTML/CSS/JS) dosyalardan oluştuğu için aşağıdaki platformlardan birinde 1 dakika içinde ücretsiz yayına alınabilir:
-
-### Seçenek 1: GitHub Pages (Önerilen)
-1. Proje klasörünü bir GitHub deposuna yükleyin (`git push origin main`).
-2. GitHub'da deponun **Settings (Ayarlar)** sekmesine gidin.
-3. Sol menüden **Pages** bölümünü seçin.
-4. *Build and deployment* altında **Branch** olarak `main` ve klasör olarak `/ (root)` seçip **Save** butonuna tıklayın.
-5. Birkaç saniye içinde `https://kullaniciadi.github.io/depo-adi/` adresinde siteniz yayına girecektir.
-
-### Seçenek 2: Netlify (Sürükle & Bırak)
-1. [app.netlify.com](https://app.netlify.com) adresine ücretsiz üye olun.
-2. Açılan panelde **"Add new site" -> "Deploy manually"** seçeneğine tıklayın.
-3. Proje klasörünü tarayıcıdaki alana sürükleyip bırakın.
-4. Siteniz anında `https://proje-adi.netlify.app` şeklinde canlıya alınır.
-
-### Seçenek 3: Vercel
-1. [vercel.com](https://vercel.com) adresine GitHub hesabınızla giriş yapın.
-2. **"Add New Project"** diyerek GitHub deponuzu seçin.
-3. Hiçbir derleme ayarını değiştirmeden **"Deploy"** butonuna basın.
-
----
-
-## 7. Yerel Ortamda Çalıştırma Talimatı
+## 6. Yerel Ortamda Çalıştırma Talimatı
 
 Projede `data/recipes.json` dosyasından `fetch()` API'si ile veri çekildiği için, modern tarayıcıların yerel dosya güvenlik (CORS / `file://`) kısıtlamalarına takılmamak adına basit bir yerel sunucu ile açılması tavsiye edilir:
 
@@ -166,5 +141,5 @@ Projede `data/recipes.json` dosyasından `fetch()` API'si ile veri çekildiği i
 
 ## 8. Güvenli Kodlama ve Kurallar Beyanı
 * **XSS Koruması:** Form girdileri, arama sonuçları ve JSON verileri DOM'a eklenirken kesinlikle `innerHTML` kullanılmamış; `document.createElement()`, `element.textContent` ve `setAttribute()` yöntemleri uygulanmıştır.
-* **API Güvenliği:** Projede anahtar gerektirmeyen, gizlilik riski taşımayan yerel `data/recipes.json` kaynağı kullanılmıştır.
-* **Şablon Beyanı:** Bu proje herhangi bir Bootstrap/Tailwind şablonu içermez. Tüm CSS stilleri, layout kuralları ve SVG illüstrasyonları sıfırdan özel olarak üretilmiştir.
+* **API Güvenliği:** Projede anahtar gerektirmeyen, gizlilik riski taşımayan yerel `data/recipes.json` kaynağı kullanılmadı.
+* **Şablon Beyanı:** Bu proje herhangi bir Bootstrap/Tailwind şablonu içermez. Tüm CSS stilleri, layout kuralları ve SVG illüstrasyonları sıfırdan özel olarak üretildi.

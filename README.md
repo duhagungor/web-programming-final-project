@@ -139,7 +139,7 @@ Projede `data/recipes.json` dosyasından `fetch()` API'si ile veri çekildiği i
 
 ---
 
-## 8. Güvenli Kodlama ve Kurallar Beyanı
+## 7. Güvenli Kodlama ve Kurallar Beyanı
 * **XSS Koruması:** Form girdileri, arama sonuçları ve JSON verileri DOM'a eklenirken kesinlikle `innerHTML` kullanılmamış; `document.createElement()`, `element.textContent` ve `setAttribute()` yöntemleri uygulanmıştır.
 * **API Güvenliği:** Projede anahtar gerektirmeyen, gizlilik riski taşımayan yerel `data/recipes.json` kaynağı kullanılmadı.
 * **Şablon Beyanı:** Bu proje herhangi bir Bootstrap/Tailwind şablonu içermez. Tüm CSS stilleri, layout kuralları ve SVG illüstrasyonları sıfırdan özel olarak üretildi.

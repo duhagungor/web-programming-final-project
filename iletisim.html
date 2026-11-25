@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pastel Mutfak İletişim & Tarif Gönder • Kendi özel tariflerinizi paylaşın, atölyemize ulaşın ve pastel lezzet defterinde yerinizi alın.">
+  <meta name="theme-color" content="#FFD1DC">
+  <title>Tarif Gönder & İletişim • Pastel Mutfak</title>
+
+  <!-- Google Fonts: Fredoka & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tek Harici Stil Dosyası -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       ORTAK ÜST BİLGİ & GEZİNME MENÜSÜ (HEADER / NAV - FLEXBOX)
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="site-brand" aria-label="Pastel Mutfak Ana Sayfa">
+        <img src="img/logo.svg" alt="Pastel Mutfak logosu" class="brand-logo-img">
+        <div class="brand-text-wrap">
+          <span class="brand-name">Pastel<span>Mutfak</span></span>
+          <span class="brand-tagline">Resimli Tarif Defteri</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" aria-label="Ana Gezinme">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+          <li><a href="tarifler.html" class="nav-link">Tarifler Defteri</a></li>
+          <li><a href="iletisim.html" class="nav-link active">Tarif Gönder & İletişim</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="theme-toggle-btn" aria-label="Gece Modunu Değiştir" title="Tema Değiştir">
+          🌙
+        </button>
+
+        <a href="tarifler.html?filter=favorites" class="icon-btn" aria-label="Favori Tariflerim" title="Favorilerim">
+          ❤️
+          <span class="badge-count" id="fav-count-badge">0</span>
+        </a>
+
+        <button type="button" class="mobile-nav-toggle" id="nav-toggle" aria-label="Menüyü Aç veya Kapat" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       ANA İÇERİK: İLETİŞİM & TARİF GÖNDERME
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- Sayfa Başlığı -->
+    <section class="contact-hero-section">
+      <div class="container" style="text-align: center;">
+        <span class="section-tag">Mutfak Dayanışması</span>
+        <h1 class="section-title">Tarifini Bizimle Paylaş</h1>
+        <p class="section-subtitle">
+          Anneannenizin gizli kurabiyesi veya kendi keşfiniz olan nefis bir kase... Tarifinizi yazın, çizerlerimiz onu pastel çizgilerle canlandırsın.
+        </p>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM & FORM BÖLÜMÜ (CSS GRID İKİ KOLON) -->
+    <section style="padding: 1.5rem 0 5rem;">
+      <div class="container contact-layout-grid">
+
+        <!-- SOL KOLON: BİLGİLER, İLLÜSTRASYON & SSS -->
+        <aside class="contact-info-panel">
+          <!-- Pastel İletişim İllüstrasyonu -->
+          <figure class="contact-illustration-wrap">
+            <img src="img/contact-illustration.svg" alt="Pastel tarif defteri, fırın eldiveni, kahve kupası ve kalem çizimi" width="450" height="380">
+          </figure>
+
+          <!-- İletişim & Atölye Bilgi Kartları -->
+          <div class="contact-cards-group">
+            <article class="contact-item-card">
+              <div class="contact-icon-bubble">🏡</div>
+              <div>
+                <h3 class="contact-card-title">Mutfak Atölyemiz</h3>
+                <p class="contact-card-desc">
+                  Pastel Fırın Sokak No: 14/B, Moda, Kadıköy / İstanbul
+                </p>
+              </div>
+            </article>
+
+            <article class="contact-item-card">
+              <div class="contact-icon-bubble">💌</div>
+              <div>
+                <h3 class="contact-card-title">Doğrudan E-Posta</h3>
+                <p class="contact-card-desc">
+                  merhaba@pastelmutfak.com<br>
+                  tarif@pastelmutfak.com
+                </p>
+              </div>
+            </article>
+
+            <article class="contact-item-card">
+              <div class="contact-icon-bubble">⏱️</div>
+              <div>
+                <h3 class="contact-card-title">Fırın & Çalışma Saatleri</h3>
+                <p class="contact-card-desc">
+                  Salı - Pazar: 09:30 - 18:30<br>
+                  Pazartesi: Dinlenme & Yeni İllüstrasyon Günü
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Küçük Sıkça Sorulan Sorular Kutusu -->
+          <div style="background-color: var(--bg-surface); padding: 1.5rem; border-radius: var(--radius-md); border: 2px solid var(--stroke-main);">
+            <h3 style="font-family: var(--font-heading); font-size: 1.15rem; margin-bottom: 0.6rem; color: var(--text-primary);">
+              💡 Nasıl Çalışır?
+            </h3>
+            <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.5;">
+              Gönderdiğiniz tarifler şeflerimiz tarafından denenir, porsiyon ve ölçüleri doğrulanır. Ardından illüstratörlerimiz tarafından özel pastel bir çizim hazırlanarak adınızla birlikte sitede yayınlanır!
+            </p>
+          </div>
+        </aside>
+
+        <!-- SAĞ KOLON: TARİF GÖNDERME & İLETİŞİM FORMU (HTML5 + JAVASCRIPT DOĞRULAMA) -->
+        <section class="contact-form-panel">
+          <header class="form-header">
+            <h2 class="form-header-title">Tarif Defterine Ekle 🧁</h2>
+            <p class="form-header-desc">
+              Aşağıdaki formu eksiksiz doldurarak bize iletebilirsiniz. Bilgileriniz güvenle saklanır.
+            </p>
+          </header>
+
+          <!-- Taslak Bildirim Kutusu (localStorage ile yüklenir) -->
+          <div class="draft-alert-banner" id="draft-alert" role="status">
+            <span>📝 Daha önce yazdığınız tarif taslağı otomatik geri yüklendi.</span>
+            <button type="button" class="draft-clear-btn" id="draft-clear-btn">Taslağı Sil</button>
+          </div>
+
+          <!-- Asıl Form (novalidate eklenerek JavaScript kontrolü ön plana çıkarılır) -->
+          <form class="recipe-form" id="recipe-contact-form" novalidate>
+            <!-- 2 Kolonlu Satır: Ad Soyad & E-posta -->
+            <div class="form-row-2col">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">
+                  Adınız ve Soyadınız <span class="req">*</span>
+                </label>
+                <input type="text" id="contact-name" name="name" class="form-control" placeholder="Örn: Ayşe Yılmaz" required minlength="3" autocomplete="name">
+                <span class="error-msg" id="error-name"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">
+                  E-Posta Adresiniz <span class="req">*</span>
+                </label>
+                <input type="email" id="contact-email" name="email" class="form-control" placeholder="ornek@posta.com" required autocomplete="email">
+                <span class="error-msg" id="error-email"></span>
+              </div>
+            </div>
+
+            <!-- 2 Kolonlu Satır: Kategori & Süre -->
+            <div class="form-row-2col">
+              <div class="form-group">
+                <label for="contact-category" class="form-label">
+                  Tarif Kategorisi <span class="req">*</span>
+                </label>
+                <select id="contact-category" name="category" class="form-control" required>
+                  <option value="">Lütfen kategori seçiniz...</option>
+                  <option value="Tatlilar">🍰 Tatlılar & Fırından</option>
+                  <option value="Kahvaltiliklar">🥑 Kahvaltılıklar</option>
+                  <option value="Corbalar">🥣 Çorbalar & Başlangıçlar</option>
+                  <option value="AnaYemekler">🍝 Ana Yemekler</option>
+                  <option value="Icecekler">🍵 İçecekler & Latte</option>
+                  <option value="Saglikli">🥗 Sağlıklı & Kaseler</option>
+                  <option value="Zeytinyaglilar">🌿 Ege Zeytinyağlıları</option>
+                  <option value="GenelMesaj">💬 Genel Mesaj / Soru</option>
+                </select>
+                <span class="error-msg" id="error-category"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-time" class="form-label">
+                  Hazırlama & Pişirme Süresi
+                </label>
+                <input type="text" id="contact-time" name="time" class="form-control" placeholder="Örn: 25 dakika">
+              </div>
+            </div>
+
+            <!-- Tarif Adı / Konu -->
+            <div class="form-group">
+              <label for="contact-title" class="form-label">
+                Tarifinizin Adı veya Konu <span class="req">*</span>
+              </label>
+              <input type="text" id="contact-title" name="title" class="form-control" placeholder="Örn: Yaban Mersinli Puf Kek" required minlength="3">
+              <span class="error-msg" id="error-title"></span>
+            </div>
+
+            <!-- Tarif Malzemeleri & Yapılışı -->
+            <div class="form-group">
+              <label for="contact-message" class="form-label">
+                Malzemeler, Adımlar ve Şef Tüyolarınız <span class="req">*</span>
+              </label>
+              <textarea id="contact-message" name="message" class="form-control" rows="5" placeholder="Malzeme listesini ve hazırlanış aşamalarını lütfen detaylıca yazınız (en az 15 karakter)..." required minlength="15"></textarea>
+              <span class="error-msg" id="error-message"></span>
+            </div>
+
+            <!-- Şartlar ve KVKK Onay Kutusu (Checkbox) -->
+            <div class="form-checkbox-group">
+              <input type="checkbox" id="contact-consent" name="consent" class="checkbox-custom" required>
+              <label for="contact-consent" class="checkbox-label">
+                Gönderdiğim tarifin denenmesini, illüstrasyon eşliğinde adımlarıyla Pastel Mutfak'ta yayınlanmasını onaylıyorum. <span class="req">*</span>
+              </label>
+            </div>
+            <span class="error-msg" id="error-consent" style="margin-left: 24px;"></span>
+
+            <!-- Gönder Butonu -->
+            <div style="margin-top: 1rem;">
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.9rem;">
+                <span>Tarifi Fırına Ver</span>
+                <span>🧁</span>
+              </button>
+            </div>
+          </form>
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast Bildirim Kutusu -->
+  <div class="toast-notice" id="toast-notification" role="alert" aria-live="polite"></div>
+
+  <!-- ======================================================================
+       ORTAK ALT BİLGİ (FOOTER - CSS GRID & FLEXBOX)
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="site-brand">
+            <img src="img/logo.svg" alt="Pastel Mutfak Logo" class="brand-logo-img">
+            <span class="brand-name">Pastel<span>Mutfak</span></span>
+          </a>
+          <p class="footer-desc">
+            Sakin, zarif ve tatlı pastel tonlarında tasarlanmış resimli mutfak atölyesi. Her lokmada mutluluk, her tarifte estetik.
+          </p>
+          <div class="footer-social-wrap">
+            <a href="#" class="social-pill" aria-label="Instagram">📸</a>
+            <a href="#" class="social-pill" aria-label="Pinterest">📌</a>
+            <a href="#" class="social-pill" aria-label="YouTube">🎥</a>
+            <a href="#" class="social-pill" aria-label="E-posta">✉️</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Gezinme</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Ana Sayfa</a></li>
+            <li><a href="tarifler.html" class="footer-link">Tüm Tarifler</a></li>
+            <li><a href="iletisim.html" class="footer-link">Tarif Gönder</a></li>
+            <li><a href="iletisim.html" class="footer-link">İletişim & Atölye</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Kategoriler</h3>
+          <ul class="footer-links-list">
+            <li><a href="tarifler.html?cat=tatlilar" class="footer-link">Çilekli Tart & Tatlılar</a></li>
+            <li><a href="tarifler.html?cat=kahvaltiliklar" class="footer-link">Avokado Tost & Kahvaltı</a></li>
+            <li><a href="tarifler.html?cat=corbalar" class="footer-link">Fırın Domates Çorbası</a></li>
+            <li><a href="tarifler.html?cat=anayemekler" class="footer-link">Rigatoni & Ev Makarnası</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">İlkelerimiz</h3>
+          <ul class="footer-links-list">
+            <li><span class="footer-link">✨ Katkısız & Doğal</span></li>
+            <li><span class="footer-link">📏 Milimetrik Ölçüler</span></li>
+            <li><span class="footer-link">🎨 El Çizimi Vektörler</span></li>
+            <li><span class="footer-link">🔒 Açık & Güvenli Kod</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Pastel Mutfak • Tüm Hakları Saklıdır. Saf HTML5, CSS3 ve Vanilla JavaScript ile hazırlanmıştır.</p>
+        <p>Tasarım: Pastel & Soft Aesthetic • Çerçeve veya Kütüphane İçermez.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Harici JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+[
+  {
+    "id": 1,
+    "title": "Çilekli Mini Fransız Tartı",
+    "category": "Tatlılar",
+    "time": "45 dk",
+    "servings": "4 Kişilik",
+    "difficulty": "Orta",
+    "calories": "285 kcal",
+    "image": "img/cilekli-tart.svg",
+    "altText": "Pastel tonlarda taze çilekler ve vanilyalı krema ile süslenmiş el yapımı mini tart illüstrasyonu",
+    "description": "Tereyağlı gevrek sablé tart hamuru, ipeksi Fransız pastacı kreması ve taze bahçe çileklerinin buluşması.",
+    "ingredients": [
+      "180g un (elenmiş)",
+      "90g soğuk tereyağı (küp doğranmış)",
+      "45g pudra şekeri",
+      "1 adet yumurta sarısı",
+      "250ml tam yağlı süt (krema için)",
+      "1 tatlı kaşığı vanilya özütü",
+      "250g taze çilek",
+      "1 yemek kaşığı pudra şekeri (süsleme için)"
+    ],
+    "instructions": [
+      "Soğuk tereyağı ve unu kum kıvamına gelene kadar parmak uçlarınızla yoğurun.",
+      "Pudra şekeri ve yumurta sarısını ekleyip toparlanan hamuru 30 dakika buzdolabında dinlendirin.",
+      "Tart kalıplarına hamuru yerleştirip çatal yardımıyla tabanına delikler açın, 180°C fırında 18 dakika pişirin.",
+      "Süt, şeker, nişasta ve vanilyayı koyulaşana kadar pişirip soğuyan tart kabuklarının içine doldurun.",
+      "Üzerini taze dilimlenmiş çilekler ve nane yaprakları ile süsleyerek servis yapın."
+    ],
+    "chefTip": "Tart hamurunun gevrek kalması için kremayı doldurmadan önce tart tabanına ince bir kat eritilmiş beyaz çikolata sürebilirsiniz.",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "Karamelli & Avokadolu Köy Tostu",
+    "category": "Kahvaltılıklar",
+    "time": "15 dk",
+    "servings": "1 Kişilik",
+    "difficulty": "Kolay",
+    "calories": "320 kcal",
+    "image": "img/avokado-tost.svg",
+    "altText": "Kızarmış ekşi mayalı ekmek üzerinde püre avokado ve poşe yumurtalı pastel çizim",
+    "description": "Taş fırın ekşi mayalı ekmek üzerinde krema kıvamında olgun avokado ezmesi, poşe köy yumurtası ve pul biberli aromatik zeytinyağı.",
+    "ingredients": [
+      "1 kalın dilim ekşi mayalı köy ekmeği",
+      "1/2 adet olgun avokado",
+      "1 adet taze serbest gezen tavuk yumurtası",
+      "1 tatlı kaşığı taze limon suyu",
+      "1 tatlı kaşığı sızma zeytinyağı",
+      "Bir çimdik deniz tuzu ve taze çekilmiş karabiber",
+      "Pul biber ve chia tohumu (üzeri için)"
+    ],
+    "instructions": [
+      "Ekşi mayalı ekmeği döküm tavada hafif altın sarısı olana kadar kızartın.",
+      "Avokadoyu çatal yardımıyla ezip limon suyu, zeytinyağı ve tuz ile pürüzsüzleştirin.",
+      "Kaynayan sirkeli suda yumurtayı 3 dakika haşlayarak mükemmel bir poşe yumurta hazırlayın.",
+      "Kızaran ekmeğin üzerine avokado püresini sürün, poşe yumurtayı yerleştirin.",
+      "Üzerine deniz tuzu, pul biber ve birkaç damla sızma zeytinyağı gezdirip sıcak tüketin."
+    ],
+    "chefTip": "Poşe yumurtanın dağılmaması için kaynayan suyun ortasında kaşıkla girdap oluşturup yumurtayı tam merkeze nazikçe bırakın.",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "Fesleğenli Fırın Domates Çorbası",
+    "category": "Çorbalar",
+    "time": "35 dk",
+    "servings": "4 Kişilik",
+    "difficulty": "Kolay",
+    "calories": "165 kcal",
+    "image": "img/domates-corbasi.svg",
+    "altText": "Pastel seramik kasede taze fesleğen ve çıtır krutonlarla servis edilen kremalı fırın domates çorbası çizimi",
+    "description": "Fırında sarımsak ve zeytinyağı ile karamelize edilen salkım domateslerin taze fesleğen ve hafif krema ile ipeksi dansı.",
+    "ingredients": [
+      "1 kg olgun salkım domates (ikiye bölünmüş)",
+      "1 baş sarımsak (üst kısmı kesilmiş)",
+      "1 adet orta boy kırmızı soğan",
+      "3 yemek kaşığı sızma zeytinyağı",
+      "500ml sıcak sebze suyu",
+      "1 demet taze fesleğen yaprağı",
+      "2 yemek kaşığı taze krema",
+      "Deniz tuzu ve tane karabiber"
+    ],
+    "instructions": [
+      "Fırın tepsisine domatesleri, soğanı ve sarımsağı yerleştirip üzerine zeytinyağı ve tuz gezdirin.",
+      "200°C fırında 25 dakika sebzeler hafif köz kokusu alıp yumuşayana kadar pişirin.",
+      "Fırından çıkan sarımsakları kabuğundan sıkıp domateslerle birlikte derin bir tencereye alın.",
+      "Sıcak sebze suyunu ekleyip el blenderı ile pürüzsüz ipeksi bir kıvam alana kadar çekin.",
+      "Taze fesleğen yapraklarını ve kremayı ilave edip 3 dakika kısık ateşte demlendirin."
+    ],
+    "chefTip": "Domateslerin asidini kırmak için pişirme sırasında bir çay kaşığı bal veya esmer şeker eklemek lezzeti dengeler.",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "title": "Lavanta & Limonlu Fırın Cheesecake",
+    "category": "Tatlılar",
+    "time": "60 dk",
+    "servings": "8 Kişilik",
+    "difficulty": "Zor",
+    "calories": "360 kcal",
+    "image": "img/limonlu-cheesecake.svg",
+    "altText": "Pastel sarı limon dilimi ve lavanta çiçekleriyle süslenmiş kremalı cheesecake dilimi illüstrasyonu",
+    "description": "Yulaf bisküvili taban, lavanta aromasıyla zenginleştirilmiş pürüzsüz peynir kreması ve ferahlatıcı ekşi limon curd sosu.",
+    "ingredients": [
+      "200g yulaflı bisküvi (un haline getirilmiş)",
+      "75g eritilmiş tereyağı",
+      "500g oda sıcaklığında labne peyniri",
+      "200ml krema",
+      "3 adet oda sıcaklığında yumurta",
+      "120g toz şeker",
+      "1 tatlı kaşığı yenilebilir kuru lavanta çiçeği",
+      "2 adet limonun kabuğu ve 3 yemek kaşığı taze limon suyu"
+    ],
+    "instructions": [
+      "Bisküvi kırıntılarını eritilmiş tereyağı ile harmanlayıp kelepçeli kalıbın tabanına bastırarak yayın.",
+      "Labne peynirini ve toz şekeri düşük devirde pürüzsüz olana kadar çırpın.",
+      "Yumurtaları teker teker ekleyin; lavanta taneleri, limon kabuğu ve kremayı ilave edip nazikçe karıştırın.",
+      "Harcı tabanın üzerine döküp 160°C fırında su banyosu eşliğinde 50 dakika pişirin.",
+      "Fırın kapağı aralık şekilde soğumasını bekleyin, ardından buzdolabında en az 4 saat dinlendirin."
+    ],
+    "chefTip": "Cheesecake'in üstünün çatlamaması için fırının en alt katına içi sıcak su dolu ısıya dayanıklı bir kap koyun.",
+    "featured": true
+  },
+  {
+    "id": 5,
+    "title": "Kremalı Mantarlı Fırın Rigatoni",
+    "category": "Ana Yemekler",
+    "time": "30 dk",
+    "servings": "3 Kişilik",
+    "difficulty": "Orta",
+    "calories": "440 kcal",
+    "image": "img/mantarli-makarna.svg",
+    "altText": "Pastel seramik tavada fırınlanmış, taze kekikli ve mantarlı rigatoni makarna illüstrasyonu",
+    "description": "Yabani kestane mantarları, taze dağ kekiği, sarımsaklı ipeksi krema sos ve altın rengi fırınlanmış peynir kabuğu.",
+    "ingredients": [
+      "300g rigatoni makarna",
+      "300g kestane mantarı (dilimlenmiş)",
+      "2 diş sarımsak (ince kıyılmış)",
+      "2 yemek kaşığı tereyağı ve 1 yemek kaşığı zeytinyağı",
+      "200ml sıvı krema",
+      "50g rendelenmiş parmesan veya eski kaşar",
+      "Taze dağ kekiği yaprakları",
+      "Tuz, taze çekilmiş muskat rendesi ve karabiber"
+    ],
+    "instructions": [
+      "Rigatoni makarnayı bol tuzlu kaynar suda paketteki süreden 2 dakika daha az haşlayıp süzün.",
+      "Geniş tavada tereyağı ve zeytinyağını ısıtın, mantarları yüksek ateşte suyunu salıp çekene kadar soteleyin.",
+      "Kıyılmış sarımsak ve kekiği ekleyip 1 dakika soteledikten sonra kremayı ve baharatları ilave edin.",
+      "Haşlanan makarnayı sosa ekleyip yarım kepçe makarna haşlama suyuyla 2 dakika pişirin.",
+      "Üzerine rendelenmiş peynir serpip 200°C fırının ızgara ayarında peynir eriyip kızarana kadar 5 dakika tutun."
+    ],
+    "chefTip": "Mantarları yıkamak yerine nemli bir bezle silmek, pişerken sulanmalarını önler ve nefis bir karamelizasyon sağlar.",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "title": "Seremoniyel Pastel Matcha Latte",
+    "category": "İçecekler",
+    "time": "5 dk",
+    "servings": "1 Kişilik",
+    "difficulty": "Kolay",
+    "calories": "110 kcal",
+    "image": "img/matcha-latte.svg",
+    "altText": "Pastel yeşil tonda köpüklü matcha latte ve cam bardakta bambu çırpıcı illüstrasyonu",
+    "description": "A kalite Japon yeşil çay tozu, hafif vanilya özütü ve buharda kadifemsi köpürtülmüş yulaf sütü birlikteliği.",
+    "ingredients": [
+      "1 çay kaşığı (2g) seremoniyel matcha tozu",
+      "50ml sıcak su (yaklaşık 75-80°C)",
+      "200ml barista tipi yulaf sütü",
+      "1 tatlı kaşığı saf akçaağaç şurubu veya çiçek balı",
+      "1 damla doğal vanilya özütü"
+    ],
+    "instructions": [
+      "Matcha tozunu küçük bir kaseye eleyin.",
+      "Üzerine 80°C sıcak suyu ekleyip bambu çırpıcı (chasen) ile 'W' hareketleriyle köpürene kadar çırpın.",
+      "Yulaf sütünü vanilya ve tatlandırıcı ile birlikte ısıtıp süt köpürtücü ile kadifemsi köpük haline getirin.",
+      "Bardağa önce sıcak yulaf sütünü dökün, ardından köpüklü matchayı nazikçe üstüne ekleyin.",
+      "İsteğe bağlı olarak üzerine hafifçe matcha tozu eleyerek servis yapın."
+    ],
+    "chefTip": "Kaynar su matcha tozunu yakarak acılaştırır; suyun sıcaklığının 80 dereceyi geçmemesine dikkat edin.",
+    "featured": false
+  },
+  {
+    "id": 7,
+    "title": "Pancarlı & Keçi Peynirli Kinoa Kasesi",
+    "category": "Sağlıklı",
+    "time": "20 dk",
+    "servings": "2 Kişilik",
+    "difficulty": "Kolay",
+    "calories": "270 kcal",
+    "image": "img/pancar-kase.svg",
+    "altText": "Renkli kasede fırınlanmış pancar dilimleri, kinoa, keçi peyniri ve cevizli pastel salata çizimi",
+    "description": "Karamelize fırın pancarları, yumuşak keçi peyniri kırıntıları, çıtır ceviz ve narenciyeli balsamik sos eşliğinde protein deposu.",
+    "ingredients": [
+      "1 su bardağı haşlanmış kinoa",
+      "2 adet fırınlanmış tatlı pancar (küp doğranmış)",
+      "60g taze keçi peyniri",
+      "1 avuç körpe roka ve ıspanak yaprakları",
+      "1 avuç kavrulmuş ceviz içi",
+      "2 yemek kaşığı sızma zeytinyağı",
+      "1 yemek kaşığı nar ekşisi veya balsamik sirke",
+      "Bir çimdik deniz tuzu"
+    ],
+    "instructions": [
+      "Geniş ve yayvan iki kaseye taze yeşillikleri ve haşlanmış ılık kinoayı paylaştırın.",
+      "Küp doğranmış fırın pancarlarını kaselerin bir tarafına yerleştirin.",
+      "Keçi peynirini parmaklarınızla ufalayarak kaselerin üzerine serpiştirin.",
+      "Kavrulmuş cevizleri irice kırıp salatanın üzerine gezdirin.",
+      "Zeytinyağı, balsamik ve tuzu küçük bir kavanozda çalkalayıp servis öncesinde kaselerin üzerine dökün."
+    ],
+    "chefTip": "Kinoayı haşlarken içine bir dal taze biberiye ve az tuz atmak kinoanın lezzetini derinleştirir.",
+    "featured": true
+  },
+  {
+    "id": 8,
+    "title": "Yaban Mersinli Pofuduk Pankek Kulesi",
+    "category": "Kahvaltılıklar",
+    "time": "20 dk",
+    "servings": "2 Kişilik",
+    "difficulty": "Kolay",
+    "calories": "310 kcal",
+    "image": "img/pankek-kulesi.svg",
+    "altText": "Üzerinden akçaağaç şurubu süzülen taze yaban mersinli kabarık pankek kulesi pastel çizimi",
+    "description": "Bulut gibi hafif ve pofuduk Japon tarzı sufle pankekler, sıcacık yaban mersini kompostosu ve organik tereyağı küpü.",
+    "ingredients": [
+      "1.5 su bardağı elenmiş un",
+      "1 paket kabartma tozu",
+      "1 yemek kaşığı toz şeker",
+      "1 su bardağı ılık süt",
+      "1 adet yumurta (sarısı ve beyazı ayrılmış)",
+      "25g eritilmiş tereyağı",
+      "1 kase taze yaban mersini",
+      "Servis için saf akçaağaç şurubu"
+    ],
+    "instructions": [
+      "Yumurta beyazını ayrı bir kapta kar kıvamına gelene kadar mikserle çırpın.",
+      "Yumurta sarısı, süt, eritilmiş tereyağı ve şekeri çırpıp unu ve kabartma tozunu eleyerek ekleyin.",
+      "Köpük haline gelen yumurta beyazını spatula ile söndürmeden hamura alttan üste doğru yedirin.",
+      "Hafifçe yağlanmış yapışmaz tavada kısık ateşte kabarana ve altın sarısı olana kadar her iki yüzünü 2'şer dakika pişirin.",
+      "Üst üste dizip taze yaban mersinleri ve ılık şurup eşliğinde sıcak servis yapın."
+    ],
+    "chefTip": "Pankeklerin puf gibi kabarmasının sırrı, yumurta akını ayrı çırpıp hamura en son nazikçe yedirmektir.",
+    "featured": false
+  },
+  {
+    "id": 9,
+    "title": "Pastel Çiçekli Ege Kabak Dolması",
+    "category": "Zeytinyağlılar",
+    "time": "50 dk",
+    "servings": "4 Kişilik",
+    "difficulty": "Zor",
+    "calories": "220 kcal",
+    "image": "img/kabak-cicegi.svg",
+    "altText": "Pastel sarı tonlarda kabak çiçeklerinin nane ve pirinç harcıyla doldurulmuş geleneksel zeytinyağlı çizimi",
+    "description": "Sabahın ilk ışıklarında toplanmış narin sarı kabak çiçekleri, çam fıstığı, kuş üzümü ve taze naneli pirinç dolgusuyla.",
+    "ingredients": [
+      "16 adet taze kabak çiçeği",
+      "1 su bardağı baldo pirinç (yıkanmış)",
+      "2 adet orta boy kuru soğan (yemeklik doğranmış)",
+      "1 çay bardağı sızma zeytinyağı",
+      "1 yemek kaşığı dolmalık çam fıstığı",
+      "1 yemek kaşığı kuş üzümü",
+      "Yarım demet taze nane ve dereotu",
+      "Yenibahar, tarçın, tuz ve toz şeker"
+    ],
+    "instructions": [
+      "Zeytinyağında fıstıkları hafif kavurun, soğanları ekleyip pembeleşene kadar soteleyin.",
+      "Pirinci, kuş üzümünü ve baharatları ekleyip 1 çay bardağı sıcak suyla pirinçler suyunu çekene kadar demleyin.",
+      "İç harç ılıyınca ince kıyılmış nane ve dereotunu ekleyip karıştırın.",
+      "Kabak çiçeklerinin içindeki tohumlu sarı kısmı zedelemeden çıkarın ve harcı çiçeklerin üçte ikisine kadar doldurun.",
+      "Yaprakları üst üste katlayıp tencereye dizin, zeytinyağlı ılık su gezdirip kısık ateşte 25 dakika pişirin."
+    ],
+    "chefTip": "Kabak çiçekleri çok hassastır; çiçeklerin yapraklarının yırtılmaması için dolma harcını fazla bastırmadan nazikçe yerleştirin.",
+    "featured": false
+  }
+]

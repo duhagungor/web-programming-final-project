@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPastelPancake" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF5" />
+      <stop offset="100%" stop-color="#FDF0D5" />
+    </linearGradient>
+    <filter id="pancakeShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#4A3F35" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" rx="20" fill="url(#bgPastelPancake)" />
+  <circle cx="80" cy="70" r="32" fill="#FFF" opacity="0.6"/>
+  <circle cx="330" cy="220" r="38" fill="#FFF" opacity="0.5"/>
+
+  <!-- Porselen Servis Tabağı -->
+  <ellipse cx="200" cy="225" rx="145" ry="42" fill="#FFFDF9" stroke="#4A3F35" stroke-width="2.5" filter="url(#pancakeShadow)"/>
+  <ellipse cx="200" cy="225" rx="120" ry="30" fill="none" stroke="#D8E2DC" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <!-- Pankek 1 (En alttaki) -->
+  <g id="pancake1">
+    <path d="M110 205 C110 220 290 220 290 205 L290 190 C290 175 110 175 110 190 Z" fill="#F4A261" stroke="#4A3F35" stroke-width="2.5"/>
+    <ellipse cx="200" cy="190" rx="90" ry="22" fill="#F7B267" stroke="#4A3F35" stroke-width="2"/>
+  </g>
+
+  <!-- Pankek 2 (Ortadaki) -->
+  <g id="pancake2">
+    <path d="M115 175 C115 190 285 190 285 175 L285 160 C285 145 115 145 115 160 Z" fill="#F4A261" stroke="#4A3F35" stroke-width="2.5"/>
+    <ellipse cx="200" cy="160" rx="85" ry="20" fill="#F7B267" stroke="#4A3F35" stroke-width="2"/>
+  </g>
+
+  <!-- Pankek 3 (En üstteki) -->
+  <g id="pancake3">
+    <path d="M120 145 C120 160 280 160 280 145 L280 130 C280 115 120 115 120 130 Z" fill="#F4A261" stroke="#4A3F35" stroke-width="2.5"/>
+    <ellipse cx="200" cy="130" rx="80" ry="19" fill="#F7B267" stroke="#4A3F35" stroke-width="2"/>
+  </g>
+
+  <!-- Süzülen Akçaağaç Şurubu -->
+  <path d="M160 130 C160 165 170 175 170 185 C170 195 162 195 162 180 C162 165 155 145 160 130 Z" fill="#C87941" opacity="0.9"/>
+  <path d="M235 130 C235 155 245 165 245 180 C245 190 238 190 238 175 C238 160 230 145 235 130 Z" fill="#C87941" opacity="0.9"/>
+
+  <!-- Üstündeki Tereyağı Küpü -->
+  <g transform="translate(190, 115)">
+    <polygon points="0,5 15,-3 30,5 15,13" fill="#FFEAA7" stroke="#4A3F35" stroke-width="2"/>
+    <polygon points="0,5 0,16 15,24 15,13" fill="#FDCB6E" stroke="#4A3F35" stroke-width="2"/>
+    <polygon points="15,13 15,24 30,16 30,5" fill="#FFEAA7" stroke="#4A3F35" stroke-width="2"/>
+  </g>
+
+  <!-- Taze Yaban Mersinleri -->
+  <!-- Yaban Mersini 1 -->
+  <g transform="translate(160, 120)">
+    <circle cx="0" cy="0" r="10" fill="#4361EE" stroke="#4A3F35" stroke-width="2"/>
+    <circle cx="0" cy="0" r="3" fill="#3A0CA3"/>
+  </g>
+  <!-- Yaban Mersini 2 -->
+  <g transform="translate(235, 125)">
+    <circle cx="0" cy="0" r="9" fill="#4361EE" stroke="#4A3F35" stroke-width="2"/>
+    <circle cx="0" cy="0" r="3" fill="#3A0CA3"/>
+  </g>
+  <!-- Yaban Mersini 3 (Tabağa düşmüş) -->
+  <g transform="translate(275, 215)">
+    <circle cx="0" cy="0" r="8" fill="#4361EE" stroke="#4A3F35" stroke-width="2"/>
+    <circle cx="0" cy="0" r="2.5" fill="#3A0CA3"/>
+  </g>
+
+  <!-- Pırıltı -->
+  <path d="M100 85 L102 91 L108 93 L102 95 L100 101 L98 95 L92 93 L98 91 Z" fill="#F4A261"/>
+</svg>

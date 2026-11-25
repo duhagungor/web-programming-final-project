@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPastelPeach" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3E8" />
+      <stop offset="100%" stop-color="#FFE5D9" />
+    </linearGradient>
+    <filter id="shadowBowl" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#4A3F35" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" rx="20" fill="url(#bgPastelPeach)" />
+  <circle cx="80" cy="80" r="35" fill="#FFF" opacity="0.6"/>
+  <circle cx="340" cy="220" r="40" fill="#FFF" opacity="0.4"/>
+
+  <!-- Servis Altlığı (Örme Hasır Nihale) -->
+  <ellipse cx="200" cy="210" rx="145" ry="48" fill="#EAD7C3" stroke="#4A3F35" stroke-width="2.5" filter="url(#shadowBowl)"/>
+  <ellipse cx="200" cy="210" rx="135" ry="40" fill="none" stroke="#C9A690" stroke-width="2" stroke-dasharray="5 4"/>
+
+  <!-- Pastel Seramik Kase -->
+  <g id="soupBowl">
+    <!-- Kase Dış Gövde -->
+    <path d="M110 160 C110 230 290 230 290 160 Z" fill="#D8E2DC" stroke="#4A3F35" stroke-width="2.5"/>
+    <!-- Kase Ağzı -->
+    <ellipse cx="200" cy="160" rx="90" ry="30" fill="#E8F0E8" stroke="#4A3F35" stroke-width="2.5"/>
+    
+    <!-- Kase İçi Sıcak Domates Çorbası -->
+    <ellipse cx="200" cy="162" rx="82" ry="25" fill="#F07167" stroke="#4A3F35" stroke-width="1.8"/>
+
+    <!-- Krema Girdabı (Swirl) -->
+    <path d="M175 160 Q195 150 215 162 Q205 174 190 170 Q180 166 185 160" fill="none" stroke="#FFFDF9" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Fesleğen Yaprakları -->
+    <g transform="translate(198, 160) scale(0.9)">
+      <path d="M0 0 C-10 -15 -5 -25 5 -20 C15 -15 10 0 0 0 Z" fill="#88B04B" stroke="#4A3F35" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="3" y2="-15" stroke="#4A3F35" stroke-width="1"/>
+      <path d="M3 -3 C15 -5 20 -15 15 -20 C5 -18 0 -5 3 -3 Z" fill="#A8D5BA" stroke="#4A3F35" stroke-width="1.5"/>
+    </g>
+
+    <!-- Çıtır Ekmek Krutonları -->
+    <rect x="150" y="152" width="12" height="12" rx="2" fill="#F7D9A0" stroke="#4A3F35" stroke-width="1.5" transform="rotate(15 150 152)"/>
+    <rect x="230" y="156" width="10" height="10" rx="2" fill="#F7D9A0" stroke="#4A3F35" stroke-width="1.5" transform="rotate(-10 230 156)"/>
+  </g>
+
+  <!-- Yandan Kaşık -->
+  <g transform="translate(305, 120) rotate(35)">
+    <line x1="0" y1="0" x2="0" y2="80" stroke="#C9A690" stroke-width="5" stroke-linecap="round"/>
+    <ellipse cx="0" cy="85" rx="12" ry="18" fill="#FAF3E0" stroke="#4A3F35" stroke-width="2"/>
+  </g>
+
+  <!-- Mis Kokulu Sıcak Buharlar -->
+  <path d="M185 125 Q180 105 190 90" stroke="#F4ACB7" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-dasharray="3 4"/>
+  <path d="M210 120 Q215 100 205 85" stroke="#F4ACB7" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-dasharray="3 4"/>
+
+  <!-- Pırıltı -->
+  <path d="M310 80 L312 86 L318 88 L312 90 L310 96 L308 90 L302 88 L308 86 Z" fill="#FFB703"/>
+</svg>

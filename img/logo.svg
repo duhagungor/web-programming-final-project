@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="logoPastel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE5EC" />
+      <stop offset="100%" stop-color="#FFD1DC" />
+    </linearGradient>
+  </defs>
+  <!-- Arka plan yuvarlak pastel daire -->
+  <circle cx="50" cy="50" r="46" fill="url(#logoPastel)" stroke="#4A3F35" stroke-width="2.5" />
+  <circle cx="50" cy="50" r="42" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-dasharray="3 3" />
+  
+  <!-- Şef şapkası & Çırpıcı çizimi -->
+  <path d="M36 45 C32 35 44 26 50 30 C56 26 68 35 64 45 Z" fill="#FFFDF9" stroke="#4A3F35" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M35 45 C35 43 65 43 65 45 L63 52 C63 54 37 54 37 52 Z" fill="#D8E2DC" stroke="#4A3F35" stroke-width="2.5"/>
+  
+  <!-- Çapraz Tahta Kaşık ve Çırpıcı -->
+  <!-- Kaşık -->
+  <line x1="33" y1="72" x2="67" y2="46" stroke="#C9A690" stroke-width="3" stroke-linecap="round"/>
+  <ellipse cx="67" cy="46" rx="6" ry="4" transform="rotate(-35 67 46)" fill="#FCD5CE" stroke="#4A3F35" stroke-width="2.5"/>
+  <!-- Çırpıcı teli -->
+  <line x1="67" y1="72" x2="36" y2="48" stroke="#4A3F35" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="36" cy="48" rx="7" ry="5" transform="rotate(35 36 48)" fill="none" stroke="#4A3F35" stroke-width="2"/>
+  
+  <!-- Küçük kalp & pırıltı -->
+  <path d="M50 63 C48 60 44 61 44 64 C44 67 50 71 50 71 C50 71 56 67 56 64 C56 61 52 60 50 63 Z" fill="#FF8FAB"/>
+  <path d="M72 26 L74 30 L78 32 L74 34 L72 38 L70 34 L66 32 L70 30 Z" fill="#FFE382" />
+</svg>

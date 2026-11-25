@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPastelSalad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5F7" />
+      <stop offset="100%" stop-color="#FCE1E8" />
+    </linearGradient>
+    <filter id="saladShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#4A3F35" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <rect width="400" height="300" rx="20" fill="url(#bgPastelSalad)" />
+  <circle cx="80" cy="70" r="30" fill="#FFF" opacity="0.6"/>
+  <circle cx="340" cy="220" r="35" fill="#FFF" opacity="0.4"/>
+
+  <!-- Ahşap Masa Üzeri Kase Tabanı -->
+  <ellipse cx="200" cy="220" rx="135" ry="40" fill="#FFFDF9" stroke="#4A3F35" stroke-width="2.5" filter="url(#saladShadow)"/>
+
+  <!-- Pastel Seramik Kase -->
+  <g id="saladBowl" filter="url(#saladShadow)">
+    <path d="M100 160 C100 235 300 235 300 160 Z" fill="#FFE5D9" stroke="#4A3F35" stroke-width="2.5"/>
+    <ellipse cx="200" cy="160" rx="100" ry="32" fill="#FFFDF9" stroke="#4A3F35" stroke-width="2.5"/>
+    <ellipse cx="200" cy="160" rx="92" ry="26" fill="#F8EDEB" />
+  </g>
+
+  <!-- Kinoa Tabanı (Küçük noktalar) -->
+  <g id="quinoaBed">
+    <ellipse cx="200" cy="165" rx="85" ry="20" fill="#F4ECE1"/>
+    <circle cx="160" cy="165" r="1.5" fill="#DDB892"/>
+    <circle cx="175" cy="168" r="1.5" fill="#DDB892"/>
+    <circle cx="215" cy="165" r="1.5" fill="#DDB892"/>
+    <circle cx="230" cy="168" r="1.5" fill="#DDB892"/>
+  </g>
+
+  <!-- Fırın Pancar Dilimleri (Canlı Pastel Pembe/Mürdüm) -->
+  <g transform="translate(150, 155) rotate(-15)">
+    <ellipse cx="0" cy="0" rx="18" ry="12" fill="#D90429" stroke="#4A3F35" stroke-width="2"/>
+    <ellipse cx="0" cy="0" rx="12" ry="7" fill="#EF233C"/>
+  </g>
+  <g transform="translate(175, 145) rotate(20)">
+    <ellipse cx="0" cy="0" rx="16" ry="11" fill="#D90429" stroke="#4A3F35" stroke-width="2"/>
+  </g>
+
+  <!-- Körpe Roka & Ispanak Yaprakları -->
+  <g transform="translate(230, 150) rotate(-25)">
+    <path d="M0 0 C-10 -20 10 -30 20 -15 C25 -5 10 5 0 0 Z" fill="#88B04B" stroke="#4A3F35" stroke-width="1.8"/>
+    <line x1="0" y1="0" x2="10" y2="-15" stroke="#4A3F35" stroke-width="1.2"/>
+  </g>
+  <g transform="translate(245, 160) rotate(10)">
+    <path d="M0 0 C-10 -18 10 -25 18 -12 C22 -3 8 5 0 0 Z" fill="#A8D5BA" stroke="#4A3F35" stroke-width="1.8"/>
+  </g>
+
+  <!-- Beyaz Keçi Peyniri Kırıntıları -->
+  <rect x="195" y="152" width="10" height="9" rx="2" fill="#FFFDF9" stroke="#4A3F35" stroke-width="1.5"/>
+  <rect x="180" y="162" width="8" height="7" rx="2" fill="#FFFDF9" stroke="#4A3F35" stroke-width="1.5"/>
+  <rect x="215" y="160" width="9" height="8" rx="2" fill="#FFFDF9" stroke="#4A3F35" stroke-width="1.5"/>
+
+  <!-- Çıtır Ceviz Taneleri -->
+  <ellipse cx="140" cy="170" rx="8" ry="6" fill="#C69C72" stroke="#4A3F35" stroke-width="1.5"/>
+  <ellipse cx="250" cy="172" rx="7" ry="5" fill="#C69C72" stroke="#4A3F35" stroke-width="1.5"/>
+
+  <!-- Nar Taneleri -->
+  <circle cx="165" cy="155" r="2.5" fill="#9D0208"/>
+  <circle cx="210" cy="175" r="2.5" fill="#9D0208"/>
+  <circle cx="190" cy="148" r="2.5" fill="#9D0208"/>
+
+  <!-- Pırıltı -->
+  <path d="M100 85 L102 91 L108 93 L102 95 L100 101 L98 95 L92 93 L98 91 Z" fill="#FF8FAB"/>
+</svg>

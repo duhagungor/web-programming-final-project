@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgContact" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F5" />
+      <stop offset="100%" stop-color="#FFE5EC" />
+    </linearGradient>
+    <filter id="softContactShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#4A3F35" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Arka Plan Yumuşak Pastel Form -->
+  <path d="M50 150 Q20 50 150 40 Q280 30 400 70 Q480 120 460 250 Q440 380 320 410 Q180 440 80 360 Q20 280 50 150 Z" fill="url(#bgContact)" opacity="0.8"/>
+  <circle cx="80" cy="100" r="16" fill="#FFE382" opacity="0.7"/>
+  <circle cx="430" cy="340" r="14" fill="#BEE1E6" opacity="0.7"/>
+
+  <!-- Açık Pastel Tarif Defteri -->
+  <g id="recipeBook" filter="url(#softContactShadow)" transform="translate(100, 140)">
+    <!-- Sol Sayfa -->
+    <path d="M0 20 C0 10 70 5 140 15 L140 215 C70 205 0 210 0 220 Z" fill="#FFFDF9" stroke="#4A3F35" stroke-width="2.5"/>
+    <!-- Sağ Sayfa -->
+    <path d="M140 15 C210 5 280 10 280 20 L280 220 C280 210 210 205 140 215 Z" fill="#FAF6EE" stroke="#4A3F35" stroke-width="2.5"/>
+    <!-- Defter Spirali / Cilt Çizgisi -->
+    <line x1="140" y1="15" x2="140" y2="215" stroke="#4A3F35" stroke-width="3"/>
+    
+    <!-- Sol Sayfa Satırları & Küçük Çilek Çizimi -->
+    <line x1="25" y1="50" x2="115" y2="50" stroke="#E6DFD5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="25" y1="75" x2="115" y2="75" stroke="#E6DFD5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="25" y1="100" x2="95" y2="100" stroke="#E6DFD5" stroke-width="2" stroke-linecap="round"/>
+    <!-- Sol Sayfada Minik İllüstrasyon Kutusu -->
+    <rect x="25" y="125" width="80" height="60" rx="8" fill="#FFF0F5" stroke="#F4ACB7" stroke-width="1.5"/>
+    <circle cx="65" cy="155" r="14" fill="#FF8FAB"/>
+    <path d="M60 143 Q65 138 70 143" stroke="#88B04B" stroke-width="2" fill="none"/>
+
+    <!-- Sağ Sayfa Satırları (Tarif Yazıları) -->
+    <line x1="165" y1="50" x2="255" y2="50" stroke="#C9A690" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="165" y1="75" x2="255" y2="75" stroke="#E6DFD5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="165" y1="100" x2="255" y2="100" stroke="#E6DFD5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="165" y1="125" x2="240" y2="125" stroke="#E6DFD5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="165" y1="150" x2="255" y2="150" stroke="#E6DFD5" stroke-width="2" stroke-linecap="round"/>
+    <line x1="165" y1="175" x2="220" y2="175" stroke="#E6DFD5" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Pastel Kurşun Kalem -->
+  <g transform="translate(340, 260) rotate(-35)">
+    <polygon points="0,0 12,0 12,90 0,90" fill="#FFB703" stroke="#4A3F35" stroke-width="2"/>
+    <polygon points="0,90 6,108 12,90" fill="#EAD7C3" stroke="#4A3F35" stroke-width="2"/>
+    <polygon points="4,102 6,108 8,102" fill="#4A3F35"/>
+    <rect x="0" y="-12" width="12" height="12" rx="2" fill="#FF8FAB" stroke="#4A3F35" stroke-width="2"/>
+  </g>
+
+  <!-- Pastel Fırın Eldiveni (Sol altta) -->
+  <g transform="translate(70, 270) rotate(-15)" filter="url(#softContactShadow)">
+    <path d="M20 90 L20 40 C20 15 50 15 50 40 L50 35 C50 15 75 15 75 45 L75 90 Z" fill="#A8D5BA" stroke="#4A3F35" stroke-width="2.5"/>
+    <!-- Başparmak Bölümü -->
+    <path d="M20 55 C5 50 5 30 20 35 Z" fill="#A8D5BA" stroke="#4A3F35" stroke-width="2.5"/>
+    <!-- Manşet -->
+    <rect x="15" y="85" width="65" height="14" rx="4" fill="#FFFDF9" stroke="#4A3F35" stroke-width="2"/>
+    <!-- Baklava Deseni -->
+    <path d="M30 45 L45 60 L60 45 M35 65 L48 78 L65 62" stroke="#FFF" stroke-width="1.8" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- Kahve Fincanı (Sağ üstte) -->
+  <g transform="translate(350, 90)" filter="url(#softContactShadow)">
+    <ellipse cx="40" cy="70" rx="30" ry="10" fill="#FFFDF9" stroke="#4A3F35" stroke-width="2"/>
+    <path d="M18 40 C18 68 62 68 62 40 Z" fill="#BEE1E6" stroke="#4A3F35" stroke-width="2"/>
+    <ellipse cx="40" cy="40" rx="22" ry="7" fill="#6B4D3C" stroke="#4A3F35" stroke-width="1.5"/>
+    <path d="M62 45 C75 45 75 60 62 62" fill="none" stroke="#4A3F35" stroke-width="2"/>
+    <!-- Buhar -->
+    <path d="M36 28 Q32 18 38 10" stroke="#BEE1E6" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <path d="M44 26 Q48 16 42 8" stroke="#BEE1E6" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- Uçuşan Kalpler ve Yıldızlar -->
+  <path d="M220 90 C215 80 200 85 200 95 C200 105 220 120 220 120 C220 120 240 105 240 95 C240 85 225 80 220 90 Z" fill="#FF8FAB" transform="rotate(-10 220 90) scale(0.8)"/>
+  <path d="M380 210 L383 218 L391 221 L383 224 L380 232 L377 224 L369 221 L377 218 Z" fill="#FFB703"/>
+</svg>

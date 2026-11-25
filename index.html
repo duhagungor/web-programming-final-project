@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pastel Mutfak • Şık pastel çizim tarzında denenmiş, tam ölçülü tatlı, yemek ve kahvaltı tarifleri defteri.">
+  <meta name="theme-color" content="#FFD1DC">
+  <title>Pastel Mutfak • Resimli Pastel Tarif Defteri</title>
+
+  <!-- Google Fonts: Fredoka & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tek Harici Stil Dosyası -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       ORTAK ÜST BİLGİ & GEZİNME MENÜSÜ (HEADER / NAV - FLEXBOX)
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <!-- Marka Logosu & Başlık -->
+      <a href="index.html" class="site-brand" aria-label="Pastel Mutfak Ana Sayfa">
+        <img src="img/logo.svg" alt="Pastel Mutfak el çizimi tencere ve çırpıcı logosu" class="brand-logo-img">
+        <div class="brand-text-wrap">
+          <span class="brand-name">Pastel<span>Mutfak</span></span>
+          <span class="brand-tagline">Resimli Tarif Defteri</span>
+        </div>
+      </a>
+
+      <!-- Masaüstü & Mobil Gezinme Menüsü -->
+      <nav class="site-nav" aria-label="Ana Gezinme">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active">Ana Sayfa</a></li>
+          <li><a href="tarifler.html" class="nav-link">Tarifler Defteri</a></li>
+          <li><a href="iletisim.html" class="nav-link">Tarif Gönder & İletişim</a></li>
+        </ul>
+      </nav>
+
+      <!-- Aksiyon Düğmeleri (Gece Modu & Favoriler) -->
+      <div class="header-actions">
+        <!-- Gece / Gündüz Pastel Modu -->
+        <button type="button" class="icon-btn" id="theme-toggle-btn" aria-label="Gece Modunu Değiştir" title="Tema Değiştir">
+          🌙
+        </button>
+
+        <!-- Favoriler Kısayolu -->
+        <a href="tarifler.html?filter=favorites" class="icon-btn" aria-label="Favori Tariflerim" title="Favorilerim">
+          ❤️
+          <span class="badge-count" id="fav-count-badge">0</span>
+        </a>
+
+        <!-- Mobil Menü Aç/Kapat Butonu -->
+        <button type="button" class="mobile-nav-toggle" id="nav-toggle" aria-label="Menüyü Aç veya Kapat" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       ANA İÇERİK (MAIN)
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- 1. HERO BÖLÜMÜ (CSS GRID & ANİMASYON) -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span>✨</span> El Çizimli Lezzet Rehberiniz
+          </div>
+          <h1 class="hero-title">
+            Mutfakta huzur veren <span class="highlight">pastel lezzetler</span> keşfedin.
+          </h1>
+          <p class="hero-description">
+            Karmaşık tarif kalabalığından uzak, her aşaması el çizimi illüstrasyonlarla anlatılmış, tam ölçülü ve garantili lezzet rehberiniz. Fırınınızı ısıtın, çırpıcınızı hazırlayın!
+          </p>
+          <div class="hero-cta-group">
+            <a href="tarifler.html" class="btn btn-primary">
+              <span>Tarifleri Keşfet</span>
+              <span>🧁</span>
+            </a>
+            <a href="iletisim.html" class="btn btn-secondary">
+              <span>Kendi Tarifini Paylaş</span>
+              <span>💌</span>
+            </a>
+          </div>
+
+          <!-- İstatistikler / Özet Bilgi -->
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Özel Pastel Çizim</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">%100</span>
+              <span class="stat-label">Denenmiş Ölçüler</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">0</span>
+              <span class="stat-label">Reklam Kargaşası</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Sağ: Pastel Şef İllüstrasyonu -->
+        <div class="hero-visual">
+          <figure class="hero-illustration-wrap">
+            <img src="img/hero-chef.svg" alt="Pastel tonlarda önlüklü ve çırpıcılı sevimli şef çizimi" width="500" height="420">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. HIZLI KATEGORİ ŞERİDİ (FLEXBOX) -->
+    <section class="quick-categories-section" aria-label="Popüler Kategoriler">
+      <div class="container">
+        <div class="categories-scroll-wrap">
+          <a href="tarifler.html?cat=tatlilar" class="quick-cat-card">
+            <span class="quick-cat-icon">🍰</span>
+            <span>Tatlılar</span>
+          </a>
+          <a href="tarifler.html?cat=kahvaltiliklar" class="quick-cat-card">
+            <span class="quick-cat-icon">🥑</span>
+            <span>Kahvaltılıklar</span>
+          </a>
+          <a href="tarifler.html?cat=corbalar" class="quick-cat-card">
+            <span class="quick-cat-icon">🥣</span>
+            <span>Çorbalar</span>
+          </a>
+          <a href="tarifler.html?cat=anayemekler" class="quick-cat-card">
+            <span class="quick-cat-icon">🍝</span>
+            <span>Ana Yemekler</span>
+          </a>
+          <a href="tarifler.html?cat=icecekler" class="quick-cat-card">
+            <span class="quick-cat-icon">🍵</span>
+            <span>İçecekler</span>
+          </a>
+          <a href="tarifler.html?cat=saglikli" class="quick-cat-card">
+            <span class="quick-cat-icon">🥗</span>
+            <span>Sağlıklı & Vegan</span>
+          </a>
+          <a href="tarifler.html?cat=zeytinyaglilar" class="quick-cat-card">
+            <span class="quick-cat-icon">🌿</span>
+            <span>Zeytinyağlılar</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ÖNE ÇIKAN SEÇKİN TARİFLER VİTRİNİ (CSS GRID & DİNAMİK JSON) -->
+    <section class="featured-section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Haftanın Seçkisi</span>
+          <h2 class="section-title">Fırından Yeni Çıkan İlhamlar</h2>
+          <p class="section-subtitle">
+            Bu hafta mutfağınızda mis kokular estirecek, adım adım fotoğraflı ve çizimli favori lezzetlerimiz.
+          </p>
+        </header>
+
+        <!-- Dinamik JSON İçeriği Bu Konteynere Yüklenir -->
+        <div class="recipes-grid" id="featured-recipes-container">
+          <!-- Yükleniyor Göstergesi -->
+          <div class="loading-box" id="loading-indicator">
+            <div class="spinner"></div>
+            <p class="loading-text">Pastel tarifler fırından çıkıyor...</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="tarifler.html" class="btn btn-secondary">
+            <span>Tüm Arşivi Gör (9+ Tarif)</span>
+            <span>✨</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. "NEDEN PASTEL MUTFAK?" ÖZELLİKLERİ (CSS GRID) -->
+    <section class="features-section">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-tag">Mutfak Felsefemiz</span>
+          <h2 class="section-title">Yemek Yapmanın En Zarif Hali</h2>
+          <p class="section-subtitle">
+            Göz yormayan soft pastel renkler ve samimi çizimlerle yemek yapmayı bir terapiye dönüştürüyoruz.
+          </p>
+        </header>
+
+        <div class="features-grid">
+          <article class="feature-box">
+            <div class="feature-icon-wrap">🎨</div>
+            <h3 class="feature-title">Pastel İllüstrasyonlar</h3>
+            <p class="feature-text">
+              Klasik yemek fotoğraflarının karmaşası yerine, her detayı sevgiyle çizilmiş pastel vektörel illüstrasyonlarla sade bir görsel şölen.
+            </p>
+          </article>
+
+          <article class="feature-box">
+            <div class="feature-icon-wrap">🧁</div>
+            <h3 class="feature-title">Garantili Ölçüler</h3>
+            <p class="feature-text">
+              Atölyemizde defalarca test edilen gramaj ve bardak ölçüleri sayesinde sürprizlere yer yok. İlk denemede kusursuz kabaran kekler!
+            </p>
+          </article>
+
+          <article class="feature-box">
+            <div class="feature-icon-wrap">🌱</div>
+            <h3 class="feature-title">Favorilerini Sakla</h3>
+            <p class="feature-text">
+              Beğendiğiniz tarifleri tek tıkla tarayıcınıza kaydedin. İnternetiniz olmasa bile favori listelerinize her an kolayca ulaşın.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. E-BÜLTEN BÖLÜMÜ (MİNİ FORM & JAVASCRIPT DOĞRULAMA) -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-card">
+          <span class="badge badge-tatlilar">Haftalık Mektup</span>
+          <h2 class="newsletter-title">Haftanın Pastel Tarifini Kaçırmayın</h2>
+          <p class="newsletter-desc">
+            Her pazar sabahı e-posta kutunuza yeni bir çizimli tarif ve şefin küçük mutfak sırları gelsin. Sıfır spam, sadece lezzet.
+          </p>
+          <form class="newsletter-form" id="newsletter-form" novalidate>
+            <input type="email" class="newsletter-input" id="newsletter-email" placeholder="E-posta adresinizi yazın..." required autocomplete="email">
+            <button type="submit" class="btn btn-primary">Abone Ol 🌸</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       TARİF DETAY MODALI (POPUP)
+       ====================================================================== -->
+  <div class="modal-overlay" id="recipe-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Kapat">✕</button>
+
+      <div class="modal-header-hero">
+        <img src="img/cilekli-tart.svg" alt="Tarif görseli" id="modal-recipe-img">
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-title-wrap">
+          <span class="badge badge-tatlilar" id="modal-recipe-category">Tatlılar</span>
+          <h2 class="modal-title" id="modal-recipe-title">Tarif Başlığı</h2>
+          <div class="modal-meta-chips">
+            <span class="modal-meta-chip" id="modal-recipe-time">⏱️ 45 dk</span>
+            <span class="modal-meta-chip" id="modal-recipe-servings">👥 4 Kişilik</span>
+            <span class="modal-meta-chip" id="modal-recipe-difficulty">⭐ Orta</span>
+            <span class="modal-meta-chip" id="modal-recipe-calories">🔥 290 kcal</span>
+          </div>
+        </div>
+
+        <p id="modal-recipe-desc" class="card-desc">Tarif açıklaması...</p>
+
+        <!-- Malzemeler -->
+        <section>
+          <h3 class="modal-section-title">🥣 Gerekli Malzemeler</h3>
+          <ul class="modal-ingredients-list" id="modal-ingredients-list">
+            <!-- Dinamik doldurulur -->
+          </ul>
+        </section>
+
+        <!-- Hazırlanış Adımları -->
+        <section>
+          <h3 class="modal-section-title">👩‍🍳 Adım Adım Hazırlanış</h3>
+          <ol class="modal-instructions-list" id="modal-instructions-list">
+            <!-- Dinamik doldurulur -->
+          </ol>
+        </section>
+
+        <!-- Şefin Pastel Tüyosu -->
+        <div class="modal-tip-box">
+          <span style="font-size: 1.5rem;">💡</span>
+          <div>
+            <strong style="color: #6A5000; font-size: 0.95rem; display: block; margin-bottom: 2px;">Şefin Pastel Notu:</strong>
+            <p id="modal-tip-text">Tüyo metni...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Bildirim Kutusu -->
+  <div class="toast-notice" id="toast-notification" role="alert" aria-live="polite"></div>
+
+  <!-- ======================================================================
+       ORTAK ALT BİLGİ (FOOTER - CSS GRID & FLEXBOX)
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- 1. Kolon: Marka & Açıklama -->
+        <div class="footer-brand-col">
+          <a href="index.html" class="site-brand">
+            <img src="img/logo.svg" alt="Pastel Mutfak Logo" class="brand-logo-img">
+            <span class="brand-name">Pastel<span>Mutfak</span></span>
+          </a>
+          <p class="footer-desc">
+            Sakin, zarif ve tatlı pastel tonlarında tasarlanmış resimli mutfak atölyesi. Her lokmada mutluluk, her tarifte estetik.
+          </p>
+          <div class="footer-social-wrap">
+            <a href="#" class="social-pill" aria-label="Instagram">📸</a>
+            <a href="#" class="social-pill" aria-label="Pinterest">📌</a>
+            <a href="#" class="social-pill" aria-label="YouTube">🎥</a>
+            <a href="#" class="social-pill" aria-label="E-posta">✉️</a>
+          </div>
+        </div>
+
+        <!-- 2. Kolon: Sayfalar -->
+        <div>
+          <h3 class="footer-title">Gezinme</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Ana Sayfa</a></li>
+            <li><a href="tarifler.html" class="footer-link">Tüm Tarifler</a></li>
+            <li><a href="iletisim.html" class="footer-link">Tarif Gönder</a></li>
+            <li><a href="iletisim.html" class="footer-link">İletişim & Atölye</a></li>
+          </ul>
+        </div>
+
+        <!-- 3. Kolon: Popüler Başlıklar -->
+        <div>
+          <h3 class="footer-title">Kategoriler</h3>
+          <ul class="footer-links-list">
+            <li><a href="tarifler.html?cat=tatlilar" class="footer-link">Çilekli Tart & Tatlılar</a></li>
+            <li><a href="tarifler.html?cat=kahvaltiliklar" class="footer-link">Avokado Tost & Kahvaltı</a></li>
+            <li><a href="tarifler.html?cat=corbalar" class="footer-link">Fırın Domates Çorbası</a></li>
+            <li><a href="tarifler.html?cat=anayemekler" class="footer-link">Rigatoni & Ev Makarnası</a></li>
+          </ul>
+        </div>
+
+        <!-- 4. Kolon: Mutfak İlkeleri -->
+        <div>
+          <h3 class="footer-title">İlkelerimiz</h3>
+          <ul class="footer-links-list">
+            <li><span class="footer-link">✨ Katkısız & Doğal</span></li>
+            <li><span class="footer-link">📏 Milimetrik Ölçüler</span></li>
+            <li><span class="footer-link">🎨 El Çizimi Vektörler</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Pastel Mutfak • Tüm Hakları Saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Harici JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

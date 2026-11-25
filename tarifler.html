@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pastel Mutfak Tarif Defteri • Arama, filtreleme, kategori ve favori desteğiyle resimli pastel yemek ve tatlı tarifleri.">
+  <meta name="theme-color" content="#FFD1DC">
+  <title>Tarifler Defteri • Pastel Mutfak</title>
+
+  <!-- Google Fonts: Fredoka & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tek Harici Stil Dosyası -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       ORTAK ÜST BİLGİ & GEZİNME MENÜSÜ (HEADER / NAV - FLEXBOX)
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="site-brand" aria-label="Pastel Mutfak Ana Sayfa">
+        <img src="img/logo.svg" alt="Pastel Mutfak logosu" class="brand-logo-img">
+        <div class="brand-text-wrap">
+          <span class="brand-name">Pastel<span>Mutfak</span></span>
+          <span class="brand-tagline">Resimli Tarif Defteri</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" aria-label="Ana Gezinme">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+          <li><a href="tarifler.html" class="nav-link active">Tarifler Defteri</a></li>
+          <li><a href="iletisim.html" class="nav-link">Tarif Gönder & İletişim</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="theme-toggle-btn" aria-label="Gece Modunu Değiştir" title="Tema Değiştir">
+          🌙
+        </button>
+
+        <a href="tarifler.html?filter=favorites" class="icon-btn" aria-label="Favori Tariflerim" title="Favorilerim">
+          ❤️
+          <span class="badge-count" id="fav-count-badge">0</span>
+        </a>
+
+        <button type="button" class="mobile-nav-toggle" id="nav-toggle" aria-label="Menüyü Aç veya Kapat" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       ANA İÇERİK: TARİFLER VE FİLTRELEME
+       ====================================================================== -->
+  <main id="main-content">
+
+    <!-- Sayfa Başlığı -->
+    <section style="padding: 3rem 0 1rem; text-align: center;">
+      <div class="container">
+        <span class="section-tag">Denenmiş & Çizimli Tarifler</span>
+        <h1 class="section-title">Pastel Tarif Kataloğu</h1>
+        <p class="section-subtitle">
+          İster anında arama yapın, ister kategorilere göre filtreleyin. Mutfakta ilhamınız hiç eksilmesin.
+        </p>
+      </div>
+    </section>
+
+    <!-- FİLTRELEME & ARAMA PANELİ (FLEXBOX & FORM ELEMANLARI) -->
+    <section class="filter-search-section">
+      <div class="container">
+        <div class="filter-wrapper">
+          <!-- Arama Çubuğu (input olayı ile anlık çalışır) -->
+          <div class="search-bar-wrap">
+            <span class="search-icon" aria-hidden="true">🔍</span>
+            <input type="text" id="recipe-search-input" class="search-input" placeholder="Tarif adı, kategori veya malzeme arayın (ör: çilek, matcha, rigatoni)..." aria-label="Tarif Arama">
+            <button type="button" id="search-clear-btn" class="search-clear-btn" aria-label="Aramayı Temizle">✕</button>
+          </div>
+
+          <!-- Kategori Sekmeleri (classList.add/remove('active')) -->
+          <div class="category-pills" role="tablist" aria-label="Tarif Kategorileri">
+            <button type="button" class="filter-btn active" data-category="all">✨ Tümü</button>
+            <button type="button" class="filter-btn" data-category="tatlılar">🍰 Tatlılar</button>
+            <button type="button" class="filter-btn" data-category="kahvaltılıklar">🥑 Kahvaltılıklar</button>
+            <button type="button" class="filter-btn" data-category="çorbalar">🥣 Çorbalar</button>
+            <button type="button" class="filter-btn" data-category="ana yemekler">🍝 Ana Yemekler</button>
+            <button type="button" class="filter-btn" data-category="içecekler">🍵 İçecekler</button>
+            <button type="button" class="filter-btn" data-category="sağlıklı">🥗 Sağlıklı</button>
+            <button type="button" class="filter-btn" data-category="zeytinyağlılar">🌿 Zeytinyağlılar</button>
+          </div>
+
+          <!-- İkincil Araçlar (Favori Filtresi & Sıralama Seçimi) -->
+          <div class="filter-sub-bar">
+            <!-- Sadece Favorileri Göster Butonu -->
+            <button type="button" class="filter-fav-toggle" id="filter-fav-btn" aria-pressed="false">
+              <span>❤️ Sadece Favorilerim</span>
+            </button>
+
+            <!-- Sıralama Dropdown Menüsü (change olayı) -->
+            <div class="sort-select-wrap">
+              <label for="recipe-sort-select">Sırala:</label>
+              <select id="recipe-sort-select" class="sort-select">
+                <option value="default">Önerilen Sıralama</option>
+                <option value="name-asc">Alfabetik (A-Z)</option>
+                <option value="time-asc">Hazırlama Süresi (En Hızlı)</option>
+                <option value="calories-asc">Kalori (En Düşük)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARİFLER LİSTESİ (CSS GRID - DİNAMİK createElement İLE OLUŞTURULUR) -->
+    <section style="padding: 2.5rem 0 5rem;">
+      <div class="container">
+        <!-- Yükleniyor Durumu (Loading Spinner) -->
+        <div class="loading-box" id="loading-indicator">
+          <div class="spinner"></div>
+          <p class="loading-text">Pastel tarif defteri açılıyor...</p>
+        </div>
+
+        <!-- Hata Durumu (Error Box) -->
+        <div class="error-box" id="error-indicator" style="display: none;">
+          <span style="font-size: 2.5rem;">⚠️</span>
+          <h3>Tarifler Yüklenirken Bir Sorun Oluştu</h3>
+          <p>Veri dosyasına ulaşılamadı. Lütfen internet bağlantınızı kontrol edip tekrar deneyiniz.</p>
+          <button type="button" class="btn btn-primary" id="retry-fetch-btn">Yeniden Dene 🔄</button>
+        </div>
+
+        <!-- Dinamik Tarif Kartları Izgarası (CSS Grid) -->
+        <div class="recipes-grid" id="recipes-container">
+          <!-- js/main.js tarafından document.createElement ile doldurulur -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======================================================================
+       TARİF DETAY MODALI (POPUP)
+       ====================================================================== -->
+  <div class="modal-overlay" id="recipe-modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-card">
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Kapat">✕</button>
+
+      <div class="modal-header-hero">
+        <img src="img/cilekli-tart.svg" alt="Tarif görseli" id="modal-recipe-img">
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-title-wrap">
+          <span class="badge badge-tatlilar" id="modal-recipe-category">Tatlılar</span>
+          <h2 class="modal-title" id="modal-recipe-title">Tarif Başlığı</h2>
+          <div class="modal-meta-chips">
+            <span class="modal-meta-chip" id="modal-recipe-time">⏱️ 45 dk</span>
+            <span class="modal-meta-chip" id="modal-recipe-servings">👥 4 Kişilik</span>
+            <span class="modal-meta-chip" id="modal-recipe-difficulty">⭐ Orta</span>
+            <span class="modal-meta-chip" id="modal-recipe-calories">🔥 290 kcal</span>
+          </div>
+        </div>
+
+        <p id="modal-recipe-desc" class="card-desc">Tarif açıklaması...</p>
+
+        <!-- Malzemeler -->
+        <section>
+          <h3 class="modal-section-title">🥣 Gerekli Malzemeler</h3>
+          <ul class="modal-ingredients-list" id="modal-ingredients-list">
+            <!-- Dinamik doldurulur -->
+          </ul>
+        </section>
+
+        <!-- Hazırlanış Adımları -->
+        <section>
+          <h3 class="modal-section-title">👩‍🍳 Adım Adım Hazırlanış</h3>
+          <ol class="modal-instructions-list" id="modal-instructions-list">
+            <!-- Dinamik doldurulur -->
+          </ol>
+        </section>
+
+        <!-- Şefin Pastel Tüyosu -->
+        <div class="modal-tip-box">
+          <span style="font-size: 1.5rem;">💡</span>
+          <div>
+            <strong style="color: #6A5000; font-size: 0.95rem; display: block; margin-bottom: 2px;">Şefin Pastel Notu:</strong>
+            <p id="modal-tip-text">Tüyo metni...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Bildirim Kutusu -->
+  <div class="toast-notice" id="toast-notification" role="alert" aria-live="polite"></div>
+
+  <!-- ======================================================================
+       ORTAK ALT BİLGİ (FOOTER - CSS GRID & FLEXBOX)
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="site-brand">
+            <img src="img/logo.svg" alt="Pastel Mutfak Logo" class="brand-logo-img">
+            <span class="brand-name">Pastel<span>Mutfak</span></span>
+          </a>
+          <p class="footer-desc">
+            Sakin, zarif ve tatlı pastel tonlarında tasarlanmış resimli mutfak atölyesi. Her lokmada mutluluk, her tarifte estetik.
+          </p>
+          <div class="footer-social-wrap">
+            <a href="#" class="social-pill" aria-label="Instagram">📸</a>
+            <a href="#" class="social-pill" aria-label="Pinterest">📌</a>
+            <a href="#" class="social-pill" aria-label="YouTube">🎥</a>
+            <a href="#" class="social-pill" aria-label="E-posta">✉️</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Gezinme</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html" class="footer-link">Ana Sayfa</a></li>
+            <li><a href="tarifler.html" class="footer-link">Tüm Tarifler</a></li>
+            <li><a href="iletisim.html" class="footer-link">Tarif Gönder</a></li>
+            <li><a href="iletisim.html" class="footer-link">İletişim & Atölye</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Kategoriler</h3>
+          <ul class="footer-links-list">
+            <li><a href="tarifler.html?cat=tatlilar" class="footer-link">Çilekli Tart & Tatlılar</a></li>
+            <li><a href="tarifler.html?cat=kahvaltiliklar" class="footer-link">Avokado Tost & Kahvaltı</a></li>
+            <li><a href="tarifler.html?cat=corbalar" class="footer-link">Fırın Domates Çorbası</a></li>
+            <li><a href="tarifler.html?cat=anayemekler" class="footer-link">Rigatoni & Ev Makarnası</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">İlkelerimiz</h3>
+          <ul class="footer-links-list">
+            <li><span class="footer-link">✨ Katkısız & Doğal</span></li>
+            <li><span class="footer-link">📏 Milimetrik Ölçüler</span></li>
+            <li><span class="footer-link">🎨 El Çizimi Vektörler</span></li>
+            <li><span class="footer-link">🔒 Açık & Güvenli Kod</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Pastel Mutfak • Tüm Hakları Saklıdır. Saf HTML5, CSS3 ve Vanilla JavaScript ile hazırlanmıştır.</p>
+        <p>Tasarım: Pastel & Soft Aesthetic • Çerçeve veya Kütüphane İçermez.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Harici JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>

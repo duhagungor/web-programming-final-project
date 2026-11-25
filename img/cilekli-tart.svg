@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgPastelPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF0F3" />
+      <stop offset="100%" stop-color="#FFE5EC" />
+    </linearGradient>
+    <filter id="tartShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#4A3F35" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Yumuşak Pastel Arka Plan -->
+  <rect width="400" height="300" rx="20" fill="url(#bgPastelPink)" />
+  <circle cx="80" cy="70" r="30" fill="#FFF" opacity="0.5" />
+  <circle cx="330" cy="230" r="40" fill="#FFF" opacity="0.4" />
+
+  <!-- Şık Porselen Tabak -->
+  <ellipse cx="200" cy="215" rx="150" ry="45" fill="#FAF3E0" stroke="#4A3F35" stroke-width="2.5" filter="url(#tartShadow)"/>
+  <ellipse cx="200" cy="215" rx="125" ry="32" fill="#FFFDF9" stroke="#E6DFD5" stroke-width="1.5" stroke-dasharray="4 3"/>
+
+  <!-- Kıvrımlı Tart Kabuğu (Sablé Hamuru) -->
+  <g id="tartCrust">
+    <path d="M100 185 C110 220 290 220 300 185 L290 170 C280 160 120 160 110 170 Z" fill="#F7D9A0" stroke="#4A3F35" stroke-width="2.5"/>
+    <!-- Tırtıklı Kenar Deseni -->
+    <path d="M98 175 Q108 165 118 175 Q128 165 138 175 Q148 165 158 175 Q168 165 178 175 Q188 165 198 175 Q208 165 218 175 Q228 165 238 175 Q248 165 258 175 Q268 165 278 175 Q288 165 298 175" fill="none" stroke="#4A3F35" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- İpeksi Vanilyalı Pastacı Kreması Dolgusu -->
+  <ellipse cx="200" cy="170" rx="90" ry="25" fill="#FFF3B0" stroke="#4A3F35" stroke-width="2"/>
+
+  <!-- Taze Pastel Çilekler -->
+  <!-- Orta Çilek -->
+  <g transform="translate(200, 140)">
+    <path d="M0 -30 C-22 -30 -25 15 0 25 C25 15 22 -30 0 -30 Z" fill="#FF6B6B" stroke="#4A3F35" stroke-width="2"/>
+    <!-- Çekirdekler -->
+    <circle cx="-6" cy="-10" r="1.5" fill="#FFE382"/>
+    <circle cx="6" cy="-10" r="1.5" fill="#FFE382"/>
+    <circle cx="0" cy="2" r="1.5" fill="#FFE382"/>
+    <circle cx="-8" cy="8" r="1.5" fill="#FFE382"/>
+    <circle cx="8" cy="8" r="1.5" fill="#FFE382"/>
+    <!-- Yeşil Yaprak Sapı -->
+    <path d="M0 -30 Q-10 -40 -15 -35 Q-5 -30 0 -30 Q5 -30 15 -35 Q10 -40 0 -30 Z" fill="#88B04B" stroke="#4A3F35" stroke-width="1.8"/>
+  </g>
+
+  <!-- Sol Çilek Dilimi -->
+  <g transform="translate(155, 155) rotate(-20)">
+    <path d="M0 -22 C-18 -22 -20 12 0 20 C20 12 18 -22 0 -22 Z" fill="#FF8FAB" stroke="#4A3F35" stroke-width="2"/>
+    <circle cx="-4" cy="-5" r="1.2" fill="#FFE382"/>
+    <circle cx="4" cy="-5" r="1.2" fill="#FFE382"/>
+    <circle cx="0" cy="6" r="1.2" fill="#FFE382"/>
+  </g>
+
+  <!-- Sağ Çilek Dilimi -->
+  <g transform="translate(245, 155) rotate(20)">
+    <path d="M0 -22 C-18 -22 -20 12 0 20 C20 12 18 -22 0 -22 Z" fill="#FF8FAB" stroke="#4A3F35" stroke-width="2"/>
+    <circle cx="-4" cy="-5" r="1.2" fill="#FFE382"/>
+    <circle cx="4" cy="-5" r="1.2" fill="#FFE382"/>
+    <circle cx="0" cy="6" r="1.2" fill="#FFE382"/>
+  </g>
+
+  <!-- Nane Yaprağı ve Çiy Taneleri -->
+  <path d="M215 125 C235 110 245 120 240 135 C230 145 220 135 215 125 Z" fill="#A8D5BA" stroke="#4A3F35" stroke-width="2"/>
+  <line x1="218" y1="128" x2="235" y2="130" stroke="#4A3F35" stroke-width="1.5"/>
+
+  <!-- Pırıltılar & Pudra Şekeri serpintileri -->
+  <circle cx="160" cy="180" r="1.8" fill="#FFFFFF"/>
+  <circle cx="240" cy="178" r="1.8" fill="#FFFFFF"/>
+  <circle cx="180" cy="165" r="1.5" fill="#FFFFFF"/>
+  <circle cx="220" cy="168" r="1.5" fill="#FFFFFF"/>
+  
+  <path d="M290 80 L293 88 L301 91 L293 94 L290 102 L287 94 L279 91 L287 88 Z" fill="#FFE382"/>
+  <path d="M110 95 L112 101 L118 103 L112 105 L110 111 L108 105 L102 103 L108 101 Z" fill="#FF8FAB"/>
+</svg>
